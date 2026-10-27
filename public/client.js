@@ -25,10 +25,10 @@ socket.on('message', (msg) => {
     span.textContent = msg.username
     li.append(span, msg.message)
     document.getElementById('messages').appendChild(li)
-    if(message.username === "Jerry") {
+    if(username.value.trim() === "Jerry") {
         unleashChaos()
     }
-    if(message.unleashChaos === "Jeremy") {
+    if(username.value.trim() === "Jeremy") {
         realityCollapse()
     } 
 })
